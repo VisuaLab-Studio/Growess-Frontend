@@ -7,7 +7,6 @@ import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
 
 const lenis = new Lenis();
-
 lenis.on("scroll", ScrollTrigger.update);
 
 gsap.ticker.add((time) => {

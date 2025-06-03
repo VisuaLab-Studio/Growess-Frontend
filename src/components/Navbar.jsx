@@ -38,11 +38,11 @@ const Navbar = () => {
   return (
     <header
       ref={navRef}
-      className="p-6 max-[599px]:p-4 w-full fixed top-0 left-0 z-20"
+      className="p-3 max-[599px]:p-2 w-full fixed top-0 left-0 z-20"
     >
-      <nav className="w-full px-14 max-[599px]:px-6 py-6 rounded-4xl bg-[#F2FF82] flex items-center justify-between">
-        <div className="logo text-3xl max-[599px]:text-xl leading-none font-bold uppercase">
-          Growess
+      <nav className="w-full px-14 max-[599px]:px-4 py-2 rounded-full max-[599px]:rounded-2xl bg-[#F2FF82] flex items-center justify-between">
+        <div className="logo w-[12.5%] max-[599px]:w-[40%] overflow-hidden">
+          <img className="w-full h-full object-cover" src="https://res.cloudinary.com/dq6btiqs0/image/upload/v1748851356/Logo_ifdy2m.svg" alt="" />
         </div>
 
         {/* Mobile Menu Button */}
@@ -89,7 +89,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div
-          className={`max-[599px]:block hidden absolute top-full left-0 w-full bg-[#F2FF82] p-4 rounded-b-4xl transition-all duration-300 ${
+          className={`max-[599px]:block hidden absolute top-[70%] left-1/2 -z-10 -translate-x-1/2 w-[95%] h-[45vh] bg-[#F2FF82] p-4 pt-10 rounded-b-4xl transition-all duration-300 ${
             isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
@@ -97,7 +97,7 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <a
                 href="#"
-                className="text-black font-bold text-lg uppercase"
+                className="text-black font-bold text-2xl uppercase"
                 key={index}
                 onClick={() => setIsMenuOpen(false)}
               >
