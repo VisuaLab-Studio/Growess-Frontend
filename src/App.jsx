@@ -6,7 +6,7 @@ import Hero from "./pages/landing/Hero";
 const App = () => {
   return (
     <main className="w-full relative overflow-hidden">
-      {/* <Loader /> */}
+      <Loader />
       <Navbar />
       <Hero />
     </main>
